@@ -7,6 +7,14 @@ body {
     margin: 0;
 }
 
+.h2 {
+    font-size: 30px
+}
+
+.h3 {
+    font-size: 26px;
+}
+
 .header-center {
     text-align: center;
 }
@@ -22,12 +30,20 @@ body {
 .product {
     padding: 25px calc(50% - 586px);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #445161;
     align-items: center;
-    line-height: 1.5;
 }
 
+
+.product-title {
+    font-size: 60px;
+}
+
+.product-list {
+    font-size: 20px;
+    line-height: 2;
+}
 
 .product-img {
     max-width: 472px;
@@ -37,10 +53,14 @@ body {
 }
 
 .about {
-    padding: 15px calc(50% - 586px);
+    padding: 45px calc(50% - 586px);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.about-column-text {
+    width: 540px;
 }
 
 .dignity {
@@ -51,11 +71,12 @@ body {
 .dignity-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0;
 }
 
 .dignity-list-item {
-    width: 48%;
+    width: 42%;
     padding-top: 30px;
 } 
 
@@ -66,12 +87,14 @@ body {
 .screenshots-wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .screenshots-item {
     width: 43%;
     display: flex;
     align-items: center;
+    margin: 0;
 }
 
 .screenshots-item-img {
@@ -80,33 +103,51 @@ body {
 
 .reviews {
     padding: 25px calc(50% - 586px) 50px;
+    background-color: #F5F5F5;
 }
 
 .reviews-wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 31px;
 }
 
 .reviews-item {
-    width: 43%;
+    width: 44%;
     display: flex;
     align-items: flex-start;
+    margin: 0;
+}
+
+.reviews-item-description {
+    padding: 16px 16px 5px 16px;
+    margin: 0 0 24px 15px;
+    background-color: #EBEBEB;
+    font-style: italic;
+}
+
+.reviews-item-text {
+    margin: 0;
+    padding-bottom: 16px;
 }
 
 .buy {
     padding: 25px calc(50% - 586px) 50px;
-    display: flex;
 }
 
 .header-buy {
-    align-self: flex-start;
-    position: relative;
-    left: 46%;
+    align-self: center;
+}
+
+.buy-wrap {
+    display: flex;
+    justify-content: space-around;
 }
 
 .buy-item {
     align-self: flex-end;
-    margin: 50px 25px;
+    margin: 25px 0;
     background-color: #445161;
     border: 2px solid #445161;
     border-radius: 5px;
@@ -173,13 +214,13 @@ body {
     margin-bottom: 18px;
     height: 43px;
     font-size: 16px;
-    font-weight: 400;
 }
 
 .contacts-form-textarea {
     border-radius: 5px;
     height: 173px;
     font-size: 16px;
+    resize: none;
 }
 
 .contacts-form-button {
@@ -191,6 +232,16 @@ body {
     margin: 19px;
     width: fit-content;
     align-self: center;
+}
+
+.contacts-form-input::placeholder {
+    color: #445162;
+    font-family: inherit;
+}
+
+.contacts-form-textarea::placeholder {
+    color: #445162;
+    font-family: inherit;
 }
 
 .contacts-column {
